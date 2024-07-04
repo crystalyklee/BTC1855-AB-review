@@ -40,6 +40,8 @@ attempts <- 0
 correct_guesses <- rep("_", secret_word_length)
 incorrect_guesses <- character()
 
+# Good idea setting an attempts variable and comparing it to 
+# max_attempts in the condition! - CL
 while (attempts < max_attempts) {
   cat("Current word: ", paste(correct_guesses, collapse = " "), "\n")
   guess <- tolower(readline(prompt = "Enter a letter: "))
@@ -88,6 +90,8 @@ if (attempts == max_attempts) { # CORRECTED CODE
 # or provide clear instructions on how to obtain them
 # I suggest running your entire code at the end to check using "Source"
 # Good job including a masked word as added functionality! 
+# I suggest adding a feature that allows the user to enter full words as guesses
+# I also suggest adding a loop that allows the user to play again
 
 # STRUCTURE/LOGIC: Good structure and logic. Starts with loading and reading .txt file, 
 # initializing attempts, setting conditions, and ending game when attempts are exhausted
